@@ -1,60 +1,48 @@
-import {
-    CircleHelp,
-    HandCoins,
-    LayoutDashboard,
-    ListOrdered,
-    MessageSquareDot,
-    Settings,
-    ShoppingBasket,
-    Users
-} from "lucide-vue-next";
-import type {Component} from "vue";
-
 export interface IMenuItem {
     name: string
     url: string
-    icon: Component
+    icon: string
 }
 
 export const MENU_DATA: IMenuItem[] = [
     {
         name: 'Home',
         url: '/',
-        icon: LayoutDashboard
+        icon: 'lucide:layout-dashboard'
     },
     {
         name: 'Products',
         url: '/products',
-        icon: ShoppingBasket
+        icon: 'lucide:shopping-basket'
     },
     {
         name: 'Payments',
         url: '/payments',
-        icon: HandCoins
+        icon: 'lucide-hand-coins'
     },
     {
         name: 'Orders',
         url: '/orders',
-        icon: ListOrdered
+        icon: 'lucide-list-ordered'
     },
     {
         name: 'Customers',
         url: '/customers',
-        icon: Users
+        icon: 'lucide-users'
     },
     {
         name: 'Feedback',
         url: '/feedback',
-        icon: MessageSquareDot
+        icon: 'lucide-message-square-dot'
     },
     {
-        name: 'settings',
+        name: 'Settings',
         url: '/settings',
-        icon: Settings
+        icon: 'lucide-settings'
     },
     {
         name: 'Help center',
         url: '/help',
-        icon: CircleHelp
+        icon: 'lucide-circle-help'
     },
 ]

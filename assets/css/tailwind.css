@@ -119,7 +119,16 @@
     }
 
     body {
-        @apply bg-background text-foreground;
+        @apply bg-background text-foreground text-base;
         font-family: 'Lato', sans-serif;
+        color: var(--primary);
+    }
+
+    a {
+        color: var(--primary);
+    }
+
+    button, a {
+        cursor: pointer;
     }
 }

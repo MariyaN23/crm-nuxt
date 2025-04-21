@@ -10,16 +10,17 @@ export default defineNuxtConfig({
     },
 
     modules: [
-        'shadcn-nuxt',
-        '@nuxt/image',
-        ['@nuxtjs/google-fonts', {
-            families: {
-                Lato: {
-                    wght: [300, 400, 700],
-                    ital: [300],
-                },
-            }
-        }],
+      'shadcn-nuxt',
+      '@nuxt/image',
+      ['@nuxtjs/google-fonts', {
+          families: {
+              Lato: {
+                  wght: [300, 400, 700],
+                  ital: [300],
+              },
+          }
+      }],
+      '@nuxt/icon',
     ],
 
     shadcn: {
