@@ -5,7 +5,7 @@
 <template>
   <section class="grid" style="min-height: 100vh">
     <LayoutSidebar/>
-    <div>
+    <div class="bg-background">
       <slot/>
     </div>
   </section>
