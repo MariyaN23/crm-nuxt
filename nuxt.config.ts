@@ -21,6 +21,7 @@ export default defineNuxtConfig({
           }
       }],
       '@nuxt/icon',
+      '@pinia/nuxt',
     ],
 
     shadcn: {
@@ -37,6 +38,10 @@ export default defineNuxtConfig({
 
     image: {
         dir: 'assets/images'
+    },
+
+    pinia: {
+        storesDirs: ['./store/**'],
     },
 
     compatibilityDate: '2025-04-18',
